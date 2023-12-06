@@ -1,0 +1,16 @@
+.queueWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 870px) {
+  .queueWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

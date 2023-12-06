@@ -1,0 +1,157 @@
+.planner {
+  background-color: #535353;
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  height: max-content;
+}
+
+@media (max-width: 919px) {
+  .planner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .planner {
+    width: 358px;
+    min-width: 358px;
+  }
+}
+
+.planner__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.planner__title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.planner__btn__wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.planner__btn {
+  padding: 0.15rem 1rem;
+  border: none;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.planner__save {
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.planner__clear {
+  background: rgb(230, 40, 40);
+  border: 2px solid rgb(230, 40, 40);
+  color: #fff;
+}
+
+.planner__btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.planner__date {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 0.7rem;
+  padding-block: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1.7px;
+  min-width: max-content;
+  letter-spacing: 1.4px;
+}
+
+.planner__slot__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.planner__btn:hover .planner__loading {
+  border: 3.4px solid transparent;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+
+.planner__loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3.4px solid transparent;
+  border-right: 3px solid #070707;
+  border-top: 3px solid #070707;
+  box-sizing: border-box;
+  animation: rotate 1.5s infinite linear;
+  margin-inline: auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.planner__info {
+  padding: 0.5rem;
+  z-index: 1;
+  color: #242323;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 10vh;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.planner__close {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+}
+
+.planner__info__x {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.planner__info.planner__info__success {
+  background: rgb(54, 255, 54);
+}
+.planner__info.planner__info__error {
+  background: rgb(255, 54, 54);
+}
+
+@media (min-width: 700px) {
+  .planner__info {
+    width: 35%;
+  }
+}

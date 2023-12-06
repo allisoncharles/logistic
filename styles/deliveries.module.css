@@ -1,0 +1,51 @@
+.deliveries {
+  background-color: #0000000c;
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  height: max-content;
+}
+
+@media (min-width: 870px) {
+  .deliveries {
+    width: 60%;
+    height: 76vh;
+  }
+}
+
+@media (min-width: 1100px) {
+  .deliveries {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1360px) {
+  .deliveries {
+    height: 500px;
+  }
+}
+
+.deliveries__title {
+  margin-bottom: 1rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.deliveries__table__wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.deliveries__table__wrapper::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.deliveries__table__wrapper::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.deliveries__table__padding {
+  height: 10px;
+}

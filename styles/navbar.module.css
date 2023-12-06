@@ -1,0 +1,24 @@
+.navbar {
+  margin-inline: auto;
+  padding-block: 0.6rem;
+  padding-inline: 1rem;
+  background-color: #000;
+}
+
+@media (min-width: 750px) {
+  .navbar {
+    padding-inline: 4vw;
+  }
+}
+
+.navbar__left {
+  cursor: pointer;
+}
+
+.navbar__wrapper {
+  max-width: 1515.56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}

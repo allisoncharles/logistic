@@ -1,0 +1,26 @@
+.footer {
+  background: #000;
+  position: relative;
+  padding-block: 2rem;
+  margin-top: 2rem;
+  width: 100vw;
+}
+
+@media (min-width: 870px) {
+  .footer {
+    position: absolute;
+    top: calc(120vh);
+    left: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    top: calc(100vh);
+    left: 0px;
+  }
+}
+.footer__text {
+  color: #d4d4d4;
+  text-align: center;
+}
